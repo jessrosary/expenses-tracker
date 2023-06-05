@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-container {
+  background-color: hsl(33, 100%, 98%);
+  text-align: left;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.graph-container {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+
+.bar {
+  width: 2.5em;
+  background-color: hsl(10, 79%, 65%);
+  margin: 0.5em;
+  border-radius: 0.25em;
+  transition: opacity 0.25s ease-in-out;
+
+  &.current {
+    background-color: hsl(186, 34%, 60%);
+  }
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.25s ease-in-out;
+  }
+}
+
+.day-label {
+  color: black;
+}
+
+.price-label {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.25em;
+}
