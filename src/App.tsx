@@ -57,7 +57,7 @@ function App() {
             <br></br>
             <span className='balance'>${weekTotal}</span>
           </div>
-          <div>
+          <div className='right'>
             <strong>+2.4%</strong>
             <br></br>
             <span className='small'>from last week</span>

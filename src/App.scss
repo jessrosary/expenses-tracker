@@ -36,6 +36,7 @@ body {
 }
 
 .main-container {
+  max-width: 700px;
   background-color: hsl(33, 100%, 98%);
   text-align: left;
   border-radius: 1em;
@@ -43,7 +44,6 @@ body {
 }
 
 .graph-container {
-  max-width: 700px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -70,11 +70,12 @@ body {
 }
 
 .day-label {
-  color: black;
+  color: hsl(28, 10%, 53%);
+  font-size: 0.9em;
 }
 
 .price-label {
-  background-color: black;
+  background-color: hsl(25, 47%, 15%);
   padding: 5px;
   font-weight: 700;
   color: white;
@@ -97,4 +98,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.right {
+  text-align: right;
 }
