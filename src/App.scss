@@ -6,6 +6,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: hsl(27, 66%, 92%);
+  color: hsl(25, 47%, 15%);
 }
 
 #root {
@@ -15,11 +16,30 @@ body {
   text-align: center;
 }
 
+.head-container {
+  background-color: hsl(10, 79%, 65%);
+  color: white;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  text-align: left;
+  font-size: 0.8em;
+  background-image: url('src/assets/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 50px 50px;
+}
+
+.balance {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
 .main-container {
   background-color: hsl(33, 100%, 98%);
   text-align: left;
   border-radius: 1em;
-  padding: 1em;
+  padding: 0.5em 1.5em 1.5em;
 }
 
 .graph-container {
@@ -55,7 +75,26 @@ body {
 
 .price-label {
   background-color: black;
+  padding: 5px;
   font-weight: 700;
   color: white;
   border-radius: 0.25em;
+  font-size: 0.8em;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid hsl(28, 10%, 53%);
+  margin: 2em 0;
+}
+
+.small {
+  font-size: 0.9em;
+  color: hsl(28, 10%, 53%);
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

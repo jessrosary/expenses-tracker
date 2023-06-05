@@ -38,14 +38,33 @@ const Bar = (props: any) => {
 
 function App() {
   return (
-    <div className='main-container'>
-      <h2>Spending - Last 7 Days</h2>
-      <div className='graph-container'>
-        {data.map((x) => (
-          <Bar key={x.day} day={x.day} amount={x.amount} />
-        ))}
+    <>
+      <div className='head-container'>
+        My balance<br></br>
+        <span className='balance'>$921.58</span>
       </div>
-    </div>
+      <div className='main-container'>
+        <h2>Spending - Last 7 Days</h2>
+        <div className='graph-container'>
+          {data.map((x) => (
+            <Bar key={x.day} day={x.day} amount={x.amount} />
+          ))}
+        </div>
+        <hr />
+        <div className='total-container'>
+          <div>
+            <span className='small'>Total this week</span>
+            <br></br>
+            <span className='balance'>${weekTotal}</span>
+          </div>
+          <div>
+            <strong>+2.4%</strong>
+            <br></br>
+            <span className='small'>from last week</span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
